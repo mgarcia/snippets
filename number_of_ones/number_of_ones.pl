@@ -7,12 +7,9 @@ use Memoize;
 memoize('num_of_ones');
 
 
-my $num =  $ARGV[0] || 4;
+my $num =  $ARGV[0] || 1;
 
-while(num_of_ones($num) != $num++){;
-	print "$num\n" unless $num % 10000;
-}
-print "Found: ",$num -1,"\n";
+print "numberOfones($num)= ",num_of_ones($num),"\n";
 
 #
 sub num_of_ones{
